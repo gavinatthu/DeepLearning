@@ -1,3 +1,3 @@
-# MachineLearning
+# Machine Learning Homework
 The Machine Learning course in THU  
 HW1: Logistic Regression
