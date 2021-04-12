@@ -1,0 +1,171 @@
+Epoch: 1
+[    0/60000 (  0%)]  Loss: 2.5494
+Traceback (most recent call last):
+  File "MNIST.py", line 99, in <module>
+    train_epoch(model, optimizer, train_loader, train_loss_history)
+  File "MNIST.py", line 40, in train_epoch
+    for i, (data, target) in enumerate(data_loader):
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/datasets/mnist.py", line 112, in __getitem__
+    img = self.transform(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 60, in __call__
+    img = t(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 97, in __call__
+    return F.to_tensor(pic)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 136, in to_tensor
+    img = torch.ByteTensor(torch.ByteStorage.from_buffer(pic.tobytes()))
+KeyboardInterrupt
+Epoch: 1
+[    0/60000 (  0%)]  Loss: 2.5494
+[10000/60000 ( 17%)]  Loss: 0.1343
+[20000/60000 ( 33%)]  Loss: 0.1001
+[30000/60000 ( 50%)]  Loss: 0.0294
+[40000/60000 ( 67%)]  Loss: 0.1347
+[50000/60000 ( 83%)]  Loss: 0.1022
+
+Average test loss: 0.0467  Accuracy: 9860/10000 (98.60%)
+
+Epoch: 2
+[    0/60000 (  0%)]  Loss: 0.0631
+[10000/60000 ( 17%)]  Loss: 0.0414
+[20000/60000 ( 33%)]  Loss: 0.0316
+[30000/60000 ( 50%)]  Loss: 0.0261
+Traceback (most recent call last):
+  File "MNIST.py", line 99, in <module>
+    train_epoch(model, optimizer, train_loader, train_loss_history)
+  File "MNIST.py", line 40, in train_epoch
+    for i, (data, target) in enumerate(data_loader):
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/datasets/mnist.py", line 112, in __getitem__
+    img = self.transform(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 60, in __call__
+    img = t(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 97, in __call__
+    return F.to_tensor(pic)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 136, in to_tensor
+    img = torch.ByteTensor(torch.ByteStorage.from_buffer(pic.tobytes()))
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/PIL/Image.py", line 744, in tobytes
+    l, s, d = e.encode(bufsize)
+KeyboardInterrupt
+Epoch: 1
+[    0/60000 (  0%)]  Loss: 2.5494
+[10000/60000 ( 17%)]  Loss: 0.1354
+[20000/60000 ( 33%)]  Loss: 0.0979
+[30000/60000 ( 50%)]  Loss: 0.0291
+[40000/60000 ( 67%)]  Loss: 0.1424
+[50000/60000 ( 83%)]  Loss: 0.1197
+
+Average test loss: 0.0506  Accuracy: 9831/10000 (98.31%)
+
+Epoch: 2
+[    0/60000 (  0%)]  Loss: 0.0568
+[10000/60000 ( 17%)]  Loss: 0.0438
+[20000/60000 ( 33%)]  Loss: 0.0340
+[30000/60000 ( 50%)]  Loss: 0.0319
+[40000/60000 ( 67%)]  Loss: 0.0234
+[50000/60000 ( 83%)]  Loss: 0.0668
+
+Average test loss: 0.0429  Accuracy: 9871/10000 (98.71%)
+
+Epoch: 3
+[    0/60000 (  0%)]  Loss: 0.0196
+[10000/60000 ( 17%)]  Loss: 0.0061
+[20000/60000 ( 33%)]  Loss: 0.0580
+[30000/60000 ( 50%)]  Loss: 0.0064
+[40000/60000 ( 67%)]  Loss: 0.0472
+[50000/60000 ( 83%)]  Loss: 0.0036
+
+Average test loss: 0.0405  Accuracy: 9867/10000 (98.67%)
+
+Epoch: 4
+[    0/60000 (  0%)]  Loss: 0.0348
+[10000/60000 ( 17%)]  Loss: 0.0193
+[20000/60000 ( 33%)]  Loss: 0.0257
+[30000/60000 ( 50%)]  Loss: 0.0550
+[40000/60000 ( 67%)]  Loss: 0.0100
+[50000/60000 ( 83%)]  Loss: 0.0181
+
+Average test loss: 0.0308  Accuracy: 9906/10000 (99.06%)
+
+Epoch: 5
+[    0/60000 (  0%)]  Loss: 0.0418
+[10000/60000 ( 17%)]  Loss: 0.0069
+[20000/60000 ( 33%)]  Loss: 0.0180
+[30000/60000 ( 50%)]  Loss: 0.0386
+[40000/60000 ( 67%)]  Loss: 0.0100
+[50000/60000 ( 83%)]  Loss: 0.0195
+
+Average test loss: 0.0333  Accuracy: 9885/10000 (98.85%)
+
+Epoch: 6
+[    0/60000 (  0%)]  Loss: 0.0078
+[10000/60000 ( 17%)]  Loss: 0.0115
+[20000/60000 ( 33%)]  Loss: 0.0127
+[30000/60000 ( 50%)]  Loss: 0.0008
+[40000/60000 ( 67%)]  Loss: 0.0137
+[50000/60000 ( 83%)]  Loss: 0.0069
+
+Average test loss: 0.0406  Accuracy: 9862/10000 (98.62%)
+
+Epoch: 7
+[    0/60000 (  0%)]  Loss: 0.0093
+[10000/60000 ( 17%)]  Loss: 0.0318
+[20000/60000 ( 33%)]  Loss: 0.0048
+[30000/60000 ( 50%)]  Loss: 0.0085
+[40000/60000 ( 67%)]  Loss: 0.0606
+[50000/60000 ( 83%)]  Loss: 0.0576
+
+Average test loss: 0.0372  Accuracy: 9883/10000 (98.83%)
+
+Epoch: 8
+[    0/60000 (  0%)]  Loss: 0.0027
+[10000/60000 ( 17%)]  Loss: 0.0450
+[20000/60000 ( 33%)]  Loss: 0.0491
+[30000/60000 ( 50%)]  Loss: 0.0010
+[40000/60000 ( 67%)]  Loss: 0.0226
+[50000/60000 ( 83%)]  Loss: 0.0064
+
+Average test loss: 0.0335  Accuracy: 9893/10000 (98.93%)
+
+Epoch: 9
+[    0/60000 (  0%)]  Loss: 0.0087
+[10000/60000 ( 17%)]  Loss: 0.0067
+[20000/60000 ( 33%)]  Loss: 0.0032
+Traceback (most recent call last):
+  File "MNIST.py", line 99, in <module>
+    train_epoch(model, optimizer, train_loader, train_loss_history)
+  File "MNIST.py", line 40, in train_epoch
+    for i, (data, target) in enumerate(data_loader):
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/datasets/mnist.py", line 112, in __getitem__
+    img = self.transform(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 60, in __call__
+    img = t(img)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 221, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/home/common/anaconda3/envs/ljw_py38/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 325, in normalize
+    tensor = tensor.clone()
+KeyboardInterrupt
