@@ -11,7 +11,7 @@ pip install tqdm skimage -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ```
 ### Dataset  
-The data is a set of images chosen at various locations chosen at random in the subsurface. The images are 101 x 101 pixels and each pixel is classified as either salt or sediment. In addition to the seismic images, the depth of the imaged location is provided for each image. The goal of the competition is to segment regions that contain salt.  
+The data is a set of images chosen at various locations chosen at random in the subsurface. The images are 101 x 101 pixels and each pixel is classified as either salt or sediment. In addition to the seismic images, the depth of the imaged location is provided for each image. The goal of the competition is to segment regions that contain salt. ![avatar](./Sample.png)  
 
 To retrain the model, you need to unzip all the zip files including three subdataset: training, competition_data and test data.  
 
@@ -19,4 +19,5 @@ To retrain the model, you need to unzip all the zip files including three subdat
 ```bash
 python train.py
 ```
+After 70epochs of training, you may obtain the following learning curve:
 ![avatar](./Learning_Curve.png)  
