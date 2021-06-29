@@ -19,4 +19,4 @@ To retrain the model, you need to unzip all the zip files including three subdat
 ```bash
 python train.py
 ```
-![avatar](./Learning Curve.png)
+![avatar](./Learning_Curve.png)  
