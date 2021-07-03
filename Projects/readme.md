@@ -22,6 +22,10 @@ python train.py
 After 70epochs of training, you may obtain the following learning curve:
 ![avatar](./Learning_Curve.png)  
 
+And the Threshold v.s. IoU curve is shown bellow:  
+![avatar](./ThresholdIoU.png)
+
+Here is the training and validation records:  
 ```bash
 Epoch 1/300
 1450/1450 [==============================] - 119s 57ms/step - loss: 0.3615 - acc: 0.8523 - val_loss: 0.3321 - val_acc: 0.8557
